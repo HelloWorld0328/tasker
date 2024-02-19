@@ -33,5 +33,3 @@ def getTodo():
         response += f"<h3>{i['user']}님의 할일 : {i['todo']}</h3>"
     
     return response
-
-
