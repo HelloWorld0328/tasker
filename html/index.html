@@ -9,6 +9,11 @@
 <body>
     <h1>Tasker</h1>
     <div id="showTodo" hx-get="/api/getTodo" hx-trigger="load every 1s"></div>
-    <form></form>
+    <form action="/api/uploadTodo" hx-post="/api/uploadTodo" hx-trigger="submit" hx-target="#res">
+        <input type="text" name="user">
+        <input type="text" name="todo">
+        <input type="submit" value="등록">
+    </form>
+    <div id="res"></div>
 </body>
 </html>
